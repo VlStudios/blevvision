@@ -46,5 +46,3 @@ app.*.map.json
 /android/app/release
 
 # Android signing
-android/app/keystore.properties
-android/app/*.jks
