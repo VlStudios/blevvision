@@ -1,16 +1,41 @@
-# blevvision
+# BlevVision
 
-A new Flutter project.
+Aplicativo Flutter para descobrir filmes e series, organizar watchlist, agenda e progresso.
 
-## Getting Started
+## Requisitos
 
-This project is a starting point for a Flutter application.
+- Flutter instalado
+- Firebase configurado para o projeto
 
-A few resources to get you started if this is your first Flutter project:
+## Configuracao local
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. Dependencias
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+```
+
+### 2. Firebase Android
+
+O projeto usa `android/app/google-services.json` versionado no repositório.
+
+Se voce precisar trocar de projeto Firebase, substitua esse arquivo pelo da sua configuracao.
+
+### 3. Assinatura Android
+
+Copie o arquivo de exemplo e preencha com os dados reais do certificado:
+
+```bash
+copy android\\app\\keystore.properties.example android\\app\\keystore.properties
+```
+
+## Rodando o projeto
+
+```bash
+flutter run
+```
+
+## Observacoes
+
+- `android/app/google-services.json` esta incluido no repositório atual.
+- `android/app/keystore.properties` nao fica no Git para evitar expor credenciais de assinatura.
